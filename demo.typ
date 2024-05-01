@@ -1,16 +1,15 @@
-#import "lib.typ": big, Big, bigg, Bigg
+#import "lib.typ": big, Big, bigg, Bigg, paired-delimiter
 #set page(height: auto, width: auto)
 
 === `delimitizer`: customize the size of the delimiter
 
+#let Bigp = paired-delimiter(Big[(], Big[)])
+#let bigp = paired-delimiter(big[(], big[)])
+
 $
-Big(\()
-big(\()
-(a+b)times (a-b)
-big(\))
+Bigp(
+  bigp((a+b)times (a-b))
 div
-big(\()
-(c+d)times (c-d)
-big(\))
-Big(\))+d \ = (a^2-b^2)/(c^2-d^2)+d
+  bigp((c+d)times (c-d))
+) + d \ = (a^2-b^2) / (c^2-d^2)+d
 $

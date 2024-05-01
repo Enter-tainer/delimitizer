@@ -6,3 +6,5 @@
 #let Big(delimiter) = scaled-delimiter(delimiter, sizes.at(1))
 #let bigg(delimiter) = scaled-delimiter(delimiter, sizes.at(2))
 #let Bigg(delimiter) = scaled-delimiter(delimiter, sizes.at(3))
+
+#let paired-delimiter(left, right) = content => [#left#content#right]
