@@ -1,5 +1,5 @@
 #import "lib.typ": big, Big, bigg, Bigg, paired-delimiter
-#set page(height: auto, width: auto)
+#set page(height: auto, width: auto, fill: white)
 
 === `delimitizer`: customize the size of the delimiter
 
