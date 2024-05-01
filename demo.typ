@@ -3,13 +3,12 @@
 
 === `delimitizer`: customize the size of the delimiter
 
-#let Bigp = paired-delimiter(Big[(], Big[)])
-#let bigp = paired-delimiter(big[(], big[)])
+#let parn = paired-delimiter("(", ")")
 
 $
-Bigp(
-  bigp((a+b)times (a-b))
+parn(size: bigg,
+  parn(size: big, (a+b)times (a-b))
 div
-  bigp((c+d)times (c-d))
+  parn(size: big, (c+d)times (c-d))
 ) + d \ = (a^2-b^2) / (c^2-d^2)+d
 $
